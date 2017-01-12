@@ -16,11 +16,12 @@ first.three <- z[1:3]
 small <- z[z < 5]
 
 # Create a vector `large` that has the values of `z` that are greater than or equal to 5
-
+large <- z[z >= 5]
 
 ### Bonus ###
 
 # Replace the values in `z` that are larger than 5 with the number 5
-
+z[z > 5] <- 5
 
 # Replace every other value in `z` with the number 0
+z[seq(1, length(z), 2)] <- 0
